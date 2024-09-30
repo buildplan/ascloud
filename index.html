@@ -7,15 +7,13 @@
     <meta name="description" content="alisufyan.cloud - A private cloud developed by Ali Sufyan" />
     <meta name="keywords" content="cloud, private cloud, Ali Sufyan" />
     <meta name="referrer" content="no-referrer" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://cdnjs.cloudflare.com;">
     
-    <!-- Correct Font Awesome Link with integrity -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-          integrity="sha512-a92v9my2MsME3yOLd+X+qYX9mc+EZaXBgvAIvGn/VtcyMLbIK2TYCGQTXpY/9pt9Sk/iw7OwStKmDf51r5S/Gw==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer" />
+    <!-- CSP allowing self-hosted CSS files -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self';">
     
+    <!-- Linking both main.css and fall.min.css (Font Awesome) -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/fall.min.css" />
 </head>
 <body class="is-preload">
 
