@@ -10,6 +10,10 @@
     
     <!-- CSP allowing self-hosted CSS files -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self';">
+
+    <!-- Frame options and XSS protection -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     
     <!-- Linking both main.css and fall.min.css (Font Awesome) -->
     <link rel="stylesheet" href="assets/css/main.css" />
